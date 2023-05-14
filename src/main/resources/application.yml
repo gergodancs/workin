@@ -1,0 +1,12 @@
+spring:
+  data:
+    web:
+      pageable:
+        default-page-size: 100
+        max-page-size: 1000
+  liquibase:
+    change-log: classpath:/db/changelog/changelog-master.xml
+    enabled: true
+
+logging.level:
+  org.springframework.security: trace

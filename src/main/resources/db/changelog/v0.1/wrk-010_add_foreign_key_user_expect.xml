@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+
+    <changeSet id="wrk-010-1" author="dancs.gergely">
+        <dropColumn tableName="user_expect" columnName="specialization"/>
+        <dropColumn tableName="user_expect" columnName="profession"/>
+    </changeSet>
+
+    <changeSet id="work-010-2" author="dancs.gergely">
+        <addColumn tableName="user_expect">
+            <column name="specialization_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="work-010-3" author="dancs.gergely">
+        <addColumn tableName="user_expect">
+            <column name="profession_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+
+    <changeSet author="dancs.gergely" id="wrk-010-4">
+        <addForeignKeyConstraint baseColumnNames="specialization_id" baseTableName="user_expect"
+                                 constraintName="fk_specialization_user_expect" referencedColumnNames="id"
+                                 referencedTableName="specialization"/>
+    </changeSet>
+
+    <changeSet author="dancs.gergely" id="wrk-010-5">
+        <addForeignKeyConstraint baseColumnNames="profession_id" baseTableName="user_expect"
+                                 constraintName="fk_profession_user_expect" referencedColumnNames="id"
+                                 referencedTableName="profession"/>
+    </changeSet>
+
+
+</databaseChangeLog>

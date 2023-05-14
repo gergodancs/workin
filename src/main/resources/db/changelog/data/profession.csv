@@ -1,0 +1,309 @@
+id,name,specialization_id
+1,Adatrögzítő,1
+2,Adminisztrátor,1
+3,Irodavezető,1
+4,Pályázatírás,1
+5,Recepciós,1
+6,Szakmai asszisztens,1
+7,Személyi asszisztens,1
+8,Titkárnő,1
+9,Titkár,1
+10,Bank biztonság,2
+11,Bank biztosítás,2
+12,Tőzsde vezető,2
+13,Banki értékesítés,2
+14,Banki ügyintéző,2
+15,Befektetési tanácsadó,2
+16,Biztosítás értékesítés,2
+17,Bróker,2
+18,Elemzés,2
+19,Finanszírozás,2
+20,Kockázatkezelő,2
+21,Projektmenedzser,2
+22,Termékfejlesztés,2
+23,Treassury,2
+24,HR igazgató,3
+25,Informatikai igazgató,3
+26,Intermin menedzser,3
+27,Marketing igazgató,3
+28,Kereskedelmi igazgató,3
+29,Gazdasági igazgató,3
+30,Startégiai tanácsadó,3
+31,Termelési igazgató,3
+32,Ügyvezető,3
+33,Egészségügyi asszisztens,4
+34,Fogorvos,4
+35,Fogtechnikus,4
+36,Gyógyszerész,4
+37,Gyógytornász,4
+38,Idősgondozó,4
+39,Klinikai kutató,4
+40,Laboráns,4
+41,Logopédus,4
+42,Masszőr,4
+43,Nővért,4
+44,Szakápoló,4
+45,Optikus,4
+46,Optometrista,4
+47,Orvos,4
+48,Pszichológus,4
+49,Mentálhigiénés szakember,4
+50,Szociális munkás,4
+51,Pszichiáter,4
+52,Természetgyógyász,4
+53,Árnyékolástechnika,5
+54,Belsőépítész,5
+55,Épületgépész,5
+56,Épületkarbantartó,5
+57,Értékbecslő,5
+58,Földmérés,5
+59,Ingatlan értékesítés,5
+60,Ingatlanfejlesztő,5
+61,Ingatlankezelő,5
+62,Kivitelező,5
+63,Lakberendező,5
+64,Műszaki ellenőr,5
+66,Műszaki előkészítő,5
+67,Műszaki rajzoló,5
+68,Projektmenedzsment,5
+69,Üzemeltető,5
+70,Brand manager,6
+71,Kereskedelmi vezető,6
+72,Informatikai értékesítő,6
+73,Ingatlanértékesítő,6
+74,Eladó,6
+75,Key Account Manager,6
+76,Külkereskedelmi bonyolító,6
+77,Műszaki értékesítő,6
+78,Online értékesítés,6
+79,Pénzügyi szolgáltatások értékesítése,6
+80,Project menedzser,6
+81,Telefonos értékesítő,6
+82,Területi képviselő,6
+83,Üzletvezető,6
+84,Rakodás,7
+85,Betanított munka,7
+86,Csomagolás,7
+87,Egyéb fizikai munka,7
+88,Építőmunka,7
+89,Földmunka,7
+90,Építőipari segédmunkás,7
+91,Gépkezelő,7
+92,Házvezető,7
+93,Gondnok,7
+94,konyhai munka,7
+95,Mezőgazdasági munka,7
+96,Szobalány/Szobafiú,7
+97,Takarítás,7
+98,Automatizálás,8
+99,CAD tervező,8
+100,Műszaki rajzoló,8
+101,CNC programozó,8
+102,Folymatmérnök,8
+103,Gyártás technikus,8
+104,Karbantartő,8
+105,Minőségbiztosítás,8
+106,Műszakvezető,8
+107,Operátor,8
+108,PLC programozó,8
+109,Projekt menedzsment,8
+110,Termékfejleszés,8
+111,Termelésirányítás,8
+112,Vegyész/technikus,8
+113,Bérszámfejtés,9
+114,HR adminisztáció,9
+115,HR specialista,9
+116,HR kontoller,9
+117,HR manager,9
+118,Toborzás/Kiválasztás,9
+119,Adatbázisszakértő,10
+120,IT tanácsadó,10
+121,Product owner,10
+122,Projectmenedzsment,10
+123,Rendszerintegrátor,10
+124,Rendszertervező,10
+125,Scrum master,10
+126,Tesztelő,10
+127,UI/UX designer,10
+128,Programozó,10
+129,Hálózati és Rendszermérnők,11
+130,Információbiztonság,11
+131,IT support/helpdesk,11
+132,IT Telecom vezető,11
+133,Projektmenedzsmenr,11
+134,Rendszergazda,11
+135,Rendszerüzemeltető,11
+136,Telekommunkáció,11
+137,Vállalatirányítási rendszer/SAP,11
+138,Adatvédelmi szakértő,12
+139,Jogi assisztens,12
+140,Jogi gyakornoks,12
+141,Jogtanácsos,12
+142,Jogász,12
+143,Pályázati szakértő,12
+144,Ügyvéd,12
+145,Adásszerkesztő,13
+146,Casting,13
+147,Divat/Stílustervező,13
+148,Felvételvezető,13
+149,Kameraman,13
+150,Filmgyártás,13
+151,Fotózás,13
+152,Grafikus,13
+153,Host/Hostess,13
+154,Kirakatrendező,13
+155,Kommunikáció és PR,13
+156,Marketing,13
+157,Médiatervező,13
+158,Modell,13
+159,Nyomdász,13
+160,Online marketing,13
+161,Piackutató,13
+162,Projektmanager,13
+163,Rendezvényszervező,13
+164,Statiszta,13
+165,Ruhatervező,13
+166,Újságíró/Riporter,13
+167,Elektromérnök,14
+168,Élelmiszermérnök,14
+169,Építészmérnök,14
+170,Építőmérnök,14
+171,Faipari mérnök,14
+172,Gépészmérnök,14
+173,Hang és világítástechnikai mérnök,14
+174,Kertészmérnök,14
+175,Könnyűipari mérnök,14
+176,Környezetmérnök,14
+177,Közlekedési mérnök,14
+178,Logisztikai mérnök,14
+179,Mechatronikai mérnök,14
+180,Mikrobiológus/Biomérnök,14
+181,Üzemmérnök,14
+182,Vegyészmérnök,14
+183,Villamosmérnök,14
+184,Agármérnök,15
+185,Állatorvos,15
+186,Biotechnika,15
+187,Hulladékgazdálkodás,15
+188,Katasztrófavédelem,15
+189,Környezetvédelem,15
+190,Vízgazdálkodás,15
+191,Mezőgazdaság,15
+192,Növényorvos,15
+193,Bébiszitter,16
+194,Biológus,16
+195,Csecsemő- és Kisgyermeknevelő,16
+196,Egyéb tudomány,16
+197,Ezotéria,16
+198,Fizikus,16
+199,Könyvtáros,16
+200,Kutató,16
+201,Matematikus,16
+202,Meteorológus,16
+203,Művelődésszervező,16
+204,Múzeumi dolgozó,16
+205,Nyelvtanár,16
+206,Oktatásszervező,16
+207,Oktató,16
+208,Óvoda pedagógus,16
+209,Bölcsőde pedagógus,16
+210,Sportszervező,16
+211,Pedagógus,16
+212,Tanár,16
+213,Tanító,16
+214,Tolmács,16
+215,Fordító,16
+216,Adótanácsadó,17
+217,Cash management,17
+218,Elemző,17
+219,Tanácsadó,17
+220,Kontrolling,17
+221,Könyvelés,17
+222,Könyvvizsgálü,17
+223,Belsőellenőr,17
+224,Követelés kezelés,17
+225,Közgazdász,17
+226,Pénzügyi asszisztens,17
+227,Pénzügyi vezető,17
+228,Projektmenedzsment,17
+229,Pénztáros,17
+230,Számviteli ügyintéző,17
+231,Üzleti elemző,17
+232,Ács,18
+233,Asztalos,18
+234,Autószerelő,18
+235,Autóvillamossági szerelő,18
+236,Bébiszitter,18
+237,Biztonsági őr,18
+238,Portás,18
+239,Vagyonőr,18
+240,Bolti eladó,18
+241,Pénztáros,18
+242,Burkoló,18
+243,Cukrász,18
+244,Pék,18
+245,Egyéb szakmunka,18
+246,Esztárgályos,18
+247,Felszolgáló,18
+248,Pultos,18
+249,Festő,18
+250,Fodrász,18
+251,Kozmetikus,18
+252,Gépjárművezető,18
+253,Futár,18
+254,Gépkezelő,18
+255,Gépszerelő,18
+256,Gumiszerelő,18
+257,Heggesztő,18
+258,Hentes,18
+259,Hostess,18
+260,Host,18
+261,Animátor,18
+262,Ipari alpinista,18
+263,Karbantartó,18
+264,Karosszéria lakatos,18
+265,Karosszéri fényező,18
+266,Kárpitos,18
+267,Kertész,18
+268,Klímaszerelő,18
+269,Kőműves,18
+270,Kötött sínpályás vezető,18
+271,Lakatos,18
+272,Géplakatos,18
+273,Manikűr,18
+274,Pedikűr,18
+275,Masszőr,18
+276,Műszerész,18
+277,Nyomdász,18
+278,Raktáros,18
+279,Szakács,18
+280,Villanyszerelő,18
+281,Virágkötő,18
+282,Víz- gáz- fűtésszerelő,18
+283,Anyaggazdálkodás,19
+284,Beszerzés,19
+285,Flottakezelő,19
+286,Légi közlekedés,19
+287,Logisztika ügyintéző,19
+288,Fuvarszervező,19
+289,ProjektMenedzsment,19
+290,Szállítmányozó,19
+291,Személyszállító,19
+292,Teherszállítő,19
+293,Vámügyintéző,19
+294,Diszpécser,20
+295,Kárszakértő,20
+296,Kintlévőség kezelő,20
+297,Online ügyfélszolgálat,20
+298,Személyes ügyfélszolgálat,20
+299,Telefonos ügyfélszolgálat,20
+300,Vevőszolgálat,20
+301,Animátor,21,
+302,Éttermi vendéglátás,21
+303,HACCP szakértő,21
+304,Hajós munka,21
+305,Idegenvezető,21
+306,Közétkeztetés,21
+307,Légi utaskisérő,21
+308,Szállodai recepciós,21
+309,Turizmus,21
