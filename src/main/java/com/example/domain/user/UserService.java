@@ -23,10 +23,23 @@ public class UserService {
     private UserExpectService userExpectService;
 
 
-    public void createUser(UserBaseDto user, UserDataDto userDataDto) {
-        Long userId = userRepository.save(UserMapper.INSTANCE.fromDto(user)).getId();
-        userDataDto.setUserId(userId);
-        userDataRepository.save(UserDataMapper.INSTANCE.fromDto(userDataDto));
+    public Long createUser(UserBaseDto user) {
+       return userRepository.save(UserMapper.INSTANCE.fromDto(user)).getId();
+        // userDataDto.setUserId(userId);
+        // userDataRepository.save(UserDataMapper.INSTANCE.fromDto(userDataDto));
+    }
+
+    public Long login(UserBaseDto user) {
+        return userRepository.findByPasswordAndEmail(user.getPassword(), user.getEmail()).getId();
+
+    }
+
+    public Long saveUserData(UserDataDto dto) {
+        return userDataRepository.save(UserDataMapper.INSTANCE.fromDto(dto)).getId();
+    }
+
+    public UserDataDto getUserData(Long userId){
+        return UserDataMapper.INSTANCE.toDto(userDataRepository.findByUserId(userId)) ;
     }
 
     public void updateUser(UserDataDto userDataDto) {
@@ -39,8 +52,6 @@ public class UserService {
         userDataRepository.delete(userData);
         userRepository.deleteById(userId);
         userExpectService.deleteUserExpect(userId);
-
-
     }
 
 }

@@ -12,7 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
-import java.util.Date;
+import java.time.LocalDate;
 
 import static javax.persistence.GenerationType.IDENTITY;
 import static lombok.AccessLevel.PRIVATE;
@@ -31,14 +31,14 @@ public class UserData {
     @GeneratedValue(strategy = IDENTITY)
     private Long id;
     private String location;
-    private Date dateOfBirth;
+    private LocalDate dateOfBirth;
     private Long workExperience;
     private String education;
-    private Date startWorking;
+    private LocalDate startWorking;
     private String gender;
     @OneToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id", nullable = false)
-    private UserBase user;
+    private UsersBase user;
 
 
 }

@@ -6,6 +6,7 @@ import com.example.domain.user.persistence.model.UserBaseDto;
 import com.example.domain.user.persistence.model.UserData;
 import com.example.domain.user.persistence.model.UserDataDto;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -24,15 +25,29 @@ public class UserController {
     }
 
 
-    @PostMapping("/user")
-    public void createUser(@RequestBody UserBaseDto userBaseDto, UserDataDto userDataDto) {
-        userService.createUser(userBaseDto, userDataDto);
+    @PostMapping("/login")
+    public Long login(@RequestBody UserBaseDto userBaseDto) {
+       return userService.login(userBaseDto);
     }
+
+    @PostMapping("/signin")
+    public Long createUser(@RequestBody UserBaseDto userBaseDto) {
+       return userService.createUser(userBaseDto);
+    }
+
+    @PostMapping("/user")
+    public Long saveUserData(@RequestBody UserDataDto dto) {
+        return userService.saveUserData(dto);
+    }
+    @GetMapping("/user-data/{userId}")
+    public UserDataDto getUserData(@PathVariable Long userId){
+       return userService.getUserData(userId);
+    }
+
 
     @PutMapping("/user")
     public void updateUser(@RequestBody UserDataDto userData) {
         userService.updateUser(userData);
-
     }
 
     @DeleteMapping("/user/{userId}")

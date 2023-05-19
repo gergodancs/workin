@@ -16,5 +16,7 @@
     <include relativeToChangelogFile="true" file="v0.1/wrk-009_change_columns.xml"/>
     <include relativeToChangelogFile="true" file="v0.1/wrk-010_add_foreign_key_user_expect.xml"/>
     <include relativeToChangelogFile="true" file="v0.1/wrk-011_add_fk to_company_offer.xml"/>
+    <include relativeToChangelogFile="true" file="v0.1/wrk-012_add_data.xml"/>
+    <include relativeToChangelogFile="true" file="v0.1/wrk-013_load professions.xml"/>
 
 </databaseChangeLog>

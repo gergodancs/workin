@@ -6,7 +6,9 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.format.annotation.DateTimeFormat;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @Getter
@@ -17,10 +19,12 @@ import java.util.Date;
 public class UserDataDto {
     Long id;
     private String location;
-    private String dateOfBirth;
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+    private LocalDate dateOfBirth;
     private Long workExperience;
     private String education;
-    private Date startWorking;
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+    private LocalDate startWorking;
     private String gender;
     private Long userId;
 }

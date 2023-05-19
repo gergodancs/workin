@@ -23,7 +23,7 @@ import static lombok.AccessLevel.PUBLIC;
 @Builder(toBuilder = true)
 @NoArgsConstructor(access = PUBLIC)
 @AllArgsConstructor(access = PRIVATE)
-public class UserBase {
+public class UsersBase {
     @Id
     @GeneratedValue(strategy = IDENTITY)
     private Long id;

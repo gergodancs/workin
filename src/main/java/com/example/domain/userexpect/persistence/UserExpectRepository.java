@@ -1,6 +1,5 @@
 package com.example.domain.userexpect.persistence;
 
-import com.example.domain.user.persistence.model.UserBase;
 import com.example.domain.userexpect.persistence.model.UserExpect;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

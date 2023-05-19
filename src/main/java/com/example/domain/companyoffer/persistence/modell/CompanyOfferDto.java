@@ -2,6 +2,8 @@ package com.example.domain.companyoffer.persistence.modell;
 
 
 import com.example.domain.company.persistence.modell.CompanyBase;
+import com.example.domain.profession.modell.Profession;
+import com.example.domain.specialization.model.Specialization;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,7 +17,7 @@ public class CompanyOfferDto {
     private String title;
     private String description;
     private Long minSalary;
-    private String specialization;
-    private String profession;
+    private Long specializationId;
+    private Long professionId;
     private Long company_base_id;
 }
