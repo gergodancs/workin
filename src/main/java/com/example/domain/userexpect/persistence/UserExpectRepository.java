@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserExpectRepository extends JpaRepository<UserExpect, Long> {
 
-    @Query("select ue.id from UserExpect ue where ue.user_id = :userId")
+    @Query("select ue.id from UserExpect ue where ue.user.id = :userId")
     Long findExpectByUserId(Long userId);
 
 }

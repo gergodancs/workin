@@ -1,8 +1,8 @@
 package com.example.domain.companyoffer.persistence.modell;
 
 import com.example.domain.company.persistence.modell.CompanyBase;
-import com.example.domain.profession.modell.Profession;
-import com.example.domain.specialization.model.Specialization;
+import com.example.domain.profession.persistence.modell.Profession;
+import com.example.domain.specialization.persistence.model.Specialization;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

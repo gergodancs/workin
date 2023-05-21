@@ -15,11 +15,13 @@ public interface UserExpectMapper extends RestMapper<UserExpect, UserExpectDto> 
     @Override
     @Mapping(target = "specialization.id", source = "specializationId")
     @Mapping(target = "profession.id", source = "professionId")
+    @Mapping(target = "user.id", source = "userId")
     UserExpect fromDto(UserExpectDto source);
 
     @Override
     @Mapping(target = "specializationId", source = "specialization.id")
     @Mapping(target = "professionId", source = "profession.id")
+    @Mapping(target = "userId", source = "user.id")
     UserExpectDto toDto(UserExpect source);
 
 }

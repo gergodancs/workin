@@ -1,8 +1,7 @@
-package com.example.domain.profession.modell;
+package com.example.domain.specialization.persistence.model;
 
 
-import com.example.domain.company.persistence.modell.CompanyBase;
-import com.example.domain.specialization.model.Specialization;
+import com.example.domain.profession.persistence.modell.Profession;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -12,30 +11,30 @@ import lombok.Setter;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import java.util.List;
 
 import static javax.persistence.GenerationType.IDENTITY;
 import static lombok.AccessLevel.PRIVATE;
 import static lombok.AccessLevel.PUBLIC;
 
 @Entity
-@Table(name = "profession")
+@Table(name = "specialization")
 @Getter
 @Setter
 @Builder(toBuilder = true)
 @NoArgsConstructor(access = PUBLIC)
 @AllArgsConstructor(access = PRIVATE)
-public class Profession {
-
+public class Specialization {
     @Id
     @GeneratedValue(strategy = IDENTITY)
     private Long id;
 
-    String name;
+    private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "specialization_id", referencedColumnName = "id", nullable = false)
-    private Specialization specialization;
+ /*   @OneToMany
+    private List<Profession> professions;*/
+
 }

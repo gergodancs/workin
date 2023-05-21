@@ -1,8 +1,8 @@
 package com.example.domain.userexpect.persistence.model;
 
 
-import com.example.domain.profession.modell.Profession;
-import com.example.domain.specialization.model.Specialization;
+import com.example.domain.profession.persistence.modell.Profession;
+import com.example.domain.specialization.persistence.model.Specialization;
 import com.example.domain.user.persistence.model.UsersBase;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -39,7 +39,7 @@ public class UserExpect {
 
     @OneToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id", nullable = false)
-    private UsersBase user_id;
+    private UsersBase user;
 
     @OneToOne
     @JoinColumn(name = "specialization_id", referencedColumnName = "id", nullable = false)
